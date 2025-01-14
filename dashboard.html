@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="h-[60px] flex items-center justify-between px-4" >
+        <div class="flex items-end">
+            <sl-avatar label="User avatar"></sl-avatar>
+            <p class="font-bold">marvellous</p>
+        </div>
+        <div class="relative w-[40px]">
+            <sl-icon name="bell" class="text-2xl"></sl-icon>
+            <sl-badge class="absolute top-[-10px] right-0" variant="danger" pill>1</sl-badge>
+        </div>
+    </nav>
+
+    <!-- middle content -->
+
+    <div class="fixed bottom-0 border-black border h-[80px] w-screen flex items-center justify-evenly">
+        <div class="grid items-center justify-center">
+            <sl-icon name="house-door" class="text-3xl m-auto" ></sl-icon>
+            <p class="text-center">Home</p>
+        </div>
+        <div class="grid items-center justify-center">
+            <sl-icon name="bank" class="text-3xl m-auto" ></sl-icon>
+            <p class="text-center">Finance</p>
+        </div>
+        <div class="grid items-center justify-center">
+            <sl-icon name="credit-card-2-back" class="text-3xl m-auto" ></sl-icon>
+            <p class="text-center">Cards</p>
+        </div>
+        <div class="grid items-center justify-center">
+            <sl-icon name="three-dots-vertical" class="text-3xl m-auto" ></sl-icon>
+            <p class="text-center">more</p>
+        </div>
+    </div>
+</body>
+</html>
